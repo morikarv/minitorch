@@ -135,7 +135,7 @@ def test_symmetric(a: float, b: float) -> None:
 
 @pytest.mark.task0_2
 @given(small_floats, small_floats, small_floats)
-def test_distribute(z: float, x:float, y: float) -> None:
+def test_distribute(z: float, x:float, y: float) -> None: 
     r"""
     Write a test that ensures that your operators distribute, i.e.
     :math:`z \times (x + y) = z \times x + z \times y`
@@ -145,12 +145,11 @@ def test_distribute(z: float, x:float, y: float) -> None:
 
 @pytest.mark.task0_2
 @given(small_floats, small_floats, small_floats)
-def test_other(z: float, x:float, y: float) -> None:
+def test_other(z: float, x:float, y: float) -> None: 
     """
     Write a test that ensures some other property holds for your functions.
     """
     assert_close(mul(mul(x, y), z), mul(x, mul(y, z)))
-
 
 
 # ## Task 0.3  - Higher-order functions
