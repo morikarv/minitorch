@@ -11,7 +11,7 @@ from chalk import (
     unit_x,
     unit_y,
 )
-from colour import Color
+from colour import Color, white, blue
 from drawing import aqua, black, lightblue, lightred
 
 import minitorch
@@ -21,6 +21,35 @@ random.seed(10)
 s = minitorch.datasets["Simple"](10)
 spl = minitorch.datasets["Split"](10)
 
+class Path:
+    pass
+
+class P2:
+    pass
+
+class V2:
+    pass
+
+class hstrut:
+    pass
+
+class text:
+    pass
+
+class Linear:
+    pass
+
+class circle:
+    pass
+
+class concat:
+    pass
+
+class vstrut:
+    pass
+
+class ArrowOpts:
+    pass
 
 def base_model(x1, x2):
     return 1 if x1 + x2 > 1.0 else -1
